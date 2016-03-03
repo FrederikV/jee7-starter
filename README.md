@@ -11,6 +11,8 @@ RealDolmen courses:
     * Java Enterprise Component Development with JPA 2 and EJB 3.1
     * Java Persistence API (JPA) 2
 
+Test
+
 Demonstrated features
 ---------------------
     * JEE7
