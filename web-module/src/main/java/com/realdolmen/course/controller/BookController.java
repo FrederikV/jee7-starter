@@ -18,6 +18,8 @@ public class BookController {
         return repository.findAll();
     }
 
+    public Book findById(int bookId) {return repository.findById(bookId);}
+
     public void remove(int bookId) {
         repository.remove(bookId);
     }

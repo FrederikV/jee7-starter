@@ -8,4 +8,5 @@ import java.util.List;
 @Remote
 public interface RemoteBookRepository {
     List<Book> findAll();
+    Book findById(int id);
 }

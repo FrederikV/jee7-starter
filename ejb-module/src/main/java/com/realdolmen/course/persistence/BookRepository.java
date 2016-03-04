@@ -1,13 +1,11 @@
 package com.realdolmen.course.persistence;
 
 import com.realdolmen.course.domain.Book;
-
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;
-
 @Stateless
 @LocalBean
 public class BookRepository implements RemoteBookRepository {
@@ -16,6 +14,10 @@ public class BookRepository implements RemoteBookRepository {
 
     public List<Book> findAll() {
         return entityManager.createQuery("select b from Book b", Book.class).getResultList();
+    }
+
+    public Book findById(int id) {
+        return entityManager.find(Book.class,id);
     }
 
     public void remove(int id) {

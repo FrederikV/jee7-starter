@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Hello World!</title>
+    <meta charset="UTF-8" />
+    <style>
+        .nice {
+            background-color: forestgreen;
+        }
+    </style>
+</h:head>
+<h:body style="font-family: 'Comic Sans MS'">
+<h1>Hello World!</h1>
+    <h:outputText value="Output text" styleClass="nice" style="color: pink" />
+<p>
+    Welcome: boekje auteur:  #{bookController.findById(param.id).title} !
+</p>
+</h:body>
+</html>
